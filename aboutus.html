@@ -6,8 +6,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    	<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
         <!-- Additional CSS must be placed after Bootstrap CSS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
@@ -36,7 +36,7 @@
     </header>
 
 <!-- This is the section for Nav -->
-	<!-- This is the section for Nav -->
+    <!-- This is the section for Nav -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a href="index.html" class="navbar-brand"><img src="img/logo.png" height="30" width="30"></a>
@@ -107,16 +107,46 @@
         <div class="row row-content">
             <div class="col">
                 <h3>Community Partners</h3>
-                <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
-                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
-                <h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
-                <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other adventurers!</p>
-                <h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></h4>
-                <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
-                <h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
-                <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.</p>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#bootstrap" role="tab" data-toggle="tab"> Bootstrap Outfitters</a>  
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href=" #git" role="tab" data-toggle="tab">Git Out Expeditions</a>    
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#mongo" role="tab" data-toggle="tab"> Mongo Fly Shop</a>       
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#node"role="tab" data-toggle="tab">Node Outdoor Apparel</a> 
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade show active" id="bootstrap">
+                    <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="git">    
+                        <h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
+                        <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other adventurers!</p>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="mongo">
+                        <h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></h4>
+                        <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
+                    
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="node">
+                        <h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
+                        <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.</p>
+                    </div>
+                </div><!-- End of tab-content-->
             </div>
         </div>
+
         <div class="row row-content">
                 <div class="col-sm-9">
                     <h2>Facts &amp; Figures</h2>
@@ -157,33 +187,33 @@
     </div>
 
     <footer class="site-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-4 col-sm-2 offset-1">
-					<h5>Links</h5>
-					<ul class="list-unstyled">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="aboutus.html">About</a></li>
-						<li><a href="#">Sites</a></li>
-						<li><a href="contactus.html">Contact</a></li>
-					</ul>
-				</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
 
-				<div class="col-6 col-sm-5 text-center">
-					<h5>Social</h5>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
                     <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                     <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
                     <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                     <a href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-				</div>
+                </div>
 
-				<div class="col-sm-4 text-center">
-					<i class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234<br />
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234<br />
                     <i class="fa fa-envelope fa-lg text-primary"></i> campsites@nucamp.co
-				</div>
-			</div><!-- End of row div -->
-		</div><!-- End of the continer div-->
-	</footer>
+                </div>
+            </div><!-- End of row div -->
+        </div><!-- End of the continer div-->
+    </footer>
        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
