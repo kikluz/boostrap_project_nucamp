@@ -179,6 +179,7 @@
 	</div> <!-- End of loginModal-->
 
 	<div class="container">
+
 		<!-- Carousel Component -->
 		<div class="row row-content">
 			<div class="col-md-8 mx-auto">
@@ -232,6 +233,11 @@
 						<span class="carousel-control-next-icon"></span>
 						<span>Next</span>
 					</a>
+
+					<!-- Carousel Controls Button -->
+					<button class="btn btn-danger btn-sm" id="carouselButton">
+						<i class="fa fa-pause"></i>
+					</button>
 
 				</div><!-- End of homeCarousel -->
 			</div>
@@ -326,10 +332,36 @@
 	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-	<script>
+	
+    <script>
         $(function(){
             $('[data-toggle="tooltip"]').tooltip()
         })
+    </script>
+    <script>
+        // ready function which specifies a function to load when the webpage's DOM is ready
+        $(function() {
+            // Set the carousel class to 2 seceonds
+            $(".carousel").carousel( {interval: 2000} );
+
+            $("#carouselButton").click(function(){
+                if($("#carouselButton").children("i").hasClass("fa-pause")){
+                    // What do I want to do on click? pause and play
+                    $(".carousel").carousel("pause");
+                    // Grab the button paused and changed it to play
+                    $("#carouselButton").children("i").removeClass("fa-pause");
+                    // change Button to play
+                    $("#carouselButton").children("i").addClass("fa-play");
+            } else {
+                    // if no acction keep cyclying images 
+                    $(".carousel").carousel("cycle");
+                    // Remove class fa play
+                    $("#carouselButton").children("i").removeClass("fa-play");
+                    // Add class fa-pause
+                    $("#carouselButton").children("i").addClass("fa-pause");
+                }
+            });
+        });
     </script>
 	 
 </body>
