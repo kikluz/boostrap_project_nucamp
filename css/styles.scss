@@ -28,7 +28,12 @@ footer {
 }
 .jumbotron {
   padding: 30px;
-  background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
+  background-image: linear-gradient(
+    to right,
+    $color-secondary,
+    $color-primary,
+    $color-dark
+  );
   color: white;
   margin: 0;
 }
@@ -39,11 +44,11 @@ footer {
 }
 /*Boostrap nav*/
 .navbar {
-    background-color: $color-mid;
+  background-color: $color-mid;
 }
 
 .carousel {
-    border: solid $color-secondary;
+  border: solid $color-secondary;
 }
 
 /*acordion*/
