@@ -22,3 +22,16 @@ $(function() {
         }
     });
 });
+
+// open modal reserve camp
+$(function(){
+    $("#reserveButton").click(function(){
+        $('#reserveModal').modal('show');
+    });
+
+     // open modal Loginn 
+     $("#loginButton").click(function(){
+        $('#loginModal').modal('show'); 
+    });
+});
+
